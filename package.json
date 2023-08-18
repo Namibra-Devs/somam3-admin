@@ -1,0 +1,14 @@
+{
+  "name": "somam3-admin",
+  "version": "1.0.0",
+  "description": "Somam3 Admin Page",
+  "main": "main.js",
+  "scripts": {
+    "test": "start"
+  },
+  "keywords": [
+    "somam3"
+  ],
+  "author": "Ibrahim",
+  "license": "ISC"
+}
