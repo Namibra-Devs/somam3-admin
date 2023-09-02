@@ -26,6 +26,13 @@
     <style>
         :root {
             --font-roboto: 'Roboto', sans-serif;
+            --danger-light: hsla(0, 96%, 90%, 0.3);
+            --success-light: hsla(126, 96%, 90%, 0.3);
+            --warning-light: hsla(45, 96%, 90%, 0.3);
+            --info-light: hsla(266, 96%, 90%, 0.3);
+            --secondary-light: hsla(222, 96%, 90%, 0.3);
+            --tertiary: hsl(126, 93%, 44%);
+            --tertiary-light: hsla(126, 96%, 90%, 0.3);
         }
 
         body{
@@ -36,6 +43,35 @@
             font-family: var(--font-roboto);
         }
 
+        .bg-danger-light {
+            background-color: var(--danger-light);
+        }
+
+        .bg-success-light {
+            background-color: var(--success-light);
+        } 
+
+        .bg-info-light {
+            background-color: var(--info-light);
+        }
+
+        .bg-secondary-light {
+            background-color: var(--secondary-light);
+        }
+
+        .bg-warning-light {
+            background-color: var(--warning-light);
+        }
+
+        .bg-tertiary-light {
+            background-color: var(--tertiary-light);
+            border-color: var(--tertiary);
+        }
+
+        .text-tertiary {
+            color: var(--tertiary);
+        }
+        
     </style>
 </head>
 <body>
@@ -129,7 +165,7 @@
 
         <!-- Navbar -->
 
-        <nav class="navbar navbar-expand-lg navbar-light p-4">
+        <nav class="navbar navbar-expand-lg navbar-light p-4 border-bottom mb-5">
             <div class="container-fluid">
                 
             
@@ -156,6 +192,120 @@
             </div>
         </nav>
 
+        <!-- Main Content -->
+
+        <div class="container-fluid">
+            <div class="row gap-4">
+                <div class="col-3">
+                    <div class="card border-2 border-danger bg-danger-light" style="width: 20rem;">
+                        <div class="card-body">
+
+                            <div class="fs-5 bg-body d-inline p-2 rounded-5">
+                                <img src="./src/imgs/Iconly/orders.svg" alt="" class="img-fluid">
+                                
+                            </div>
+                          <h5 class="card-title fw-bolder mt-4">Total Orders</h5>
+                          <h6 class="card-subtitle mb-2 text-muted fw-bold">325</h6>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-2 border-warning bg-warning-light" style="width: 20rem;">
+                        <div class="card-body">
+
+                            <div class="fs-5 bg-body d-inline p-2 rounded-5">
+                                <i class="bi bi-bag-check-fill text-warning"></i>
+                                <!-- <img src="./src/imgs/Iconly/orders.svg" alt="" class="img-fluid"> -->
+                                
+                            </div>
+                          <h5 class="card-title fw-bolder mt-4">Completed Orders</h5>
+                          <h6 class="card-subtitle mb-2 text-muted fw-bold">325</h6>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-2 border-info bg-info-light" style="width: 20rem;">
+                        <div class="card-body">
+
+                            <div class="fs-5 bg-body d-inline p-2 rounded-5">
+                                <i class="bi bi-hourglass-split text-info"></i>
+                                <!-- <img src="./src/imgs/Iconly/pending.svg" alt="" class="img-fluid"> -->
+                                
+                            </div>
+                          <h5 class="card-title fw-bolder mt-4">Pending Orders</h5>
+                          <h6 class="card-subtitle mb-2 text-muted fw-bold">325</h6>
+                        </div>
+                      </div>
+                </div>
+              
+                <div class="col-3">
+                    <div class="card border-2 border-secondary bg-secondary-light" style="width: 20rem;">
+                        <div class="card-body">
+
+                            <div class="fs-5 bg-body d-inline p-2 rounded-5">
+                                <img src="./src/imgs/Iconly/rider.svg" alt="" class="img-fluid">
+                                
+                            </div>
+                          <h5 class="card-title fw-bolder mt-4">Active Riders</h5>
+                          <h6 class="card-subtitle mb-2 text-muted fw-bold">325</h6>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-2 border-tertiary bg-tertiary-light" style="width: 20rem;">
+                        <div class="card-body">
+
+                            <div class="fs-5 bg-body d-inline p-2 rounded-5">
+                                <img src="./src/imgs/Iconly/customer.svg" alt="" class="img-fluid">
+                                
+                            </div>
+                          <h5 class="card-title fw-bolder mt-4">Total Customers</h5>
+                          <h6 class="card-subtitle mb-2 text-muted fw-bold">325</h6>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-2 border-danger bg-danger-light" style="width: 20rem;">
+                        <div class="card-body">
+
+                            <div class="fs-5 bg-body d-inline p-2 rounded-5">
+                                <img src="./src/imgs/Iconly/store.svg" alt="" class="img-fluid">
+                                
+                            </div>
+                          <h5 class="card-title fw-bolder mt-4">Total Stores</h5>
+                          <h6 class="card-subtitle mb-2 text-muted fw-bold">325</h6>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-2 border-info bg-info-light" style="width: 20rem;">
+                        <div class="card-body">
+
+                            <div class="fs-5 bg-body d-inline p-2 rounded-5">
+                                <img src="./src/imgs/Iconly/TimeCircle.svg" alt="" class="img-fluid">
+                                
+                            </div>
+                          <h5 class="card-title fw-bolder mt-4">Average Delivery Time</h5>
+                          <h6 class="card-subtitle mb-2 text-muted fw-bold">325</h6>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-2 border-tertiary bg-tertiary-light" style="width: 20rem;">
+                        <div class="card-body">
+
+                            <div class="fs-5 bg-body d-inline p-2 rounded-5">
+                                <i class="bi bi-coin text-tertiary"></i>
+                                <!-- <img src="./src/imgs/Iconly/orders.svg" alt="" class="img-fluid"> -->
+                                
+                            </div>
+                          <h5 class="card-title fw-bolder mt-4">Total Revenue</h5>
+                          <h6 class="card-subtitle mb-2 text-muted fw-bold">$<span class="revenue">325254</span></h6>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
     
