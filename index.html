@@ -198,7 +198,7 @@
 
             <div class="row gap-4">
                 <div class="col-3">
-                    <div class="card border-2 border-danger bg-danger-light" style="width: 20rem;">
+                    <div class="card rounded-4 border-2 border-danger bg-danger-light" style="width: 20rem;">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -211,7 +211,7 @@
                       </div>
                 </div>
                 <div class="col-3">
-                    <div class="card border-2 border-warning bg-warning-light" style="width: 20rem;">
+                    <div class="card rounded-4 border-2 border-warning bg-warning-light" style="width: 20rem;">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -225,7 +225,7 @@
                       </div>
                 </div>
                 <div class="col-3">
-                    <div class="card border-2 border-info bg-info-light" style="width: 20rem;">
+                    <div class="card rounded-4 border-2 border-info bg-info-light" style="width: 20rem;">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -240,7 +240,7 @@
                 </div>
               
                 <div class="col-3">
-                    <div class="card border-2 border-secondary bg-secondary-light" style="width: 20rem;">
+                    <div class="card rounded-4 border-2 border-secondary bg-secondary-light" style="width: 20rem;">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -253,7 +253,7 @@
                       </div>
                 </div>
                 <div class="col-3">
-                    <div class="card border-2 border-tertiary bg-tertiary-light" style="width: 20rem;">
+                    <div class="card rounded-4 border-2 border-tertiary bg-tertiary-light" style="width: 20rem;">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -266,7 +266,7 @@
                       </div>
                 </div>
                 <div class="col-3">
-                    <div class="card border-2 border-danger bg-danger-light" style="width: 20rem;">
+                    <div class="card rounded-4 border-2 border-danger bg-danger-light" style="width: 20rem;">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -279,7 +279,7 @@
                       </div>
                 </div>
                 <div class="col-3">
-                    <div class="card border-2 border-info bg-info-light" style="width: 20rem;">
+                    <div class="card rounded-4 border-2 border-info bg-info-light" style="width: 20rem;">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -292,7 +292,7 @@
                       </div>
                 </div>
                 <div class="col-3">
-                    <div class="card border-2 border-tertiary bg-tertiary-light" style="width: 20rem;">
+                    <div class="card rounded-4 border-2 border-tertiary bg-tertiary-light" style="width: 20rem;">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -307,8 +307,85 @@
                 </div>
             </div>
 
-            <div class="d-flex">
-                
+            <div class="container-fluid my-5 py-5">
+                <div class="row">
+                    <div class="col-7 p-5 bg-light rounded-4">
+                        <div class="header my-3">
+                            <h3 class="fw-bold text-primary">Top Store Charts</h3>
+                        </div>
+                        <hr>
+                        <table class="table px-3 py-2 table-light">
+                            <thead>
+                              <tr>
+                                <th scope="col">Rank</th>
+                                <th scope="col">Store Name</th>
+                                <th scope="col">Services</th>
+                                <th scope="col">Ratings</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>The Market Basket</td>
+                                <td>Food Delivery</td>
+                                <td>4.5</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Foodie's Paradise</td>
+                                <td>Document Retrieval</td>
+                                <td>3.5</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Fresh & Flavorful
+                                <td>Grocery Shopping</td>
+                                </td>
+                                <td>3.2</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>Nourish & Co.
+                                <td>Food Delivery</td>
+                                </td>
+                                <td>3.0</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>Savory Delights
+                                <td>General Errands</td>
+                                </td>
+                                <td>2.5</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">6</th>
+                                <td>Taste Haven
+                                <td>Document Retrieval</td>
+                                </td>
+                                <td>2.0</td>
+                              </tr>
+                            </tbody>
+
+                          </table>
+                    </div>
+
+                    <div class="col-4 px-4 py-5 ms-5 bg-light rounded-4">
+                        <div class="header my-3">
+                            <h3 class="fw-bold text-primary">Customer's Comments</h3>
+                    </div>
+                    <hr>
+                    <div class="comments">
+                        <p class="fw-bold">Order ID: <span class="orderid" id="orderid">12375643</span></p>
+                        <p class="fw-bold">Rating: <span class="rating" id="rating">⭐⭐⭐⭐⭐ (5/5)</span></p>
+                        <p class="fw-bold">Feedback: <br> <span class="feedback fw-normal" id="feedback">"I'm really impressed with the quick delivery and the quality of the food. Everything was delicious and well-packaged. Keep up the great work!"</span></p>
+                    </div>
+                    <hr class="border-2">
+                    <div class="comments">
+                        <p class="fw-bold">Order ID: <span class="orderid" id="orderid">12375643</span></p>
+                        <p class="fw-bold">Rating: <span class="rating" id="rating">⭐⭐⭐⭐⭐ (5/5)</span></p>
+                        <p class="fw-bold">Feedback: <br> <span class="feedback fw-normal" id="feedback">"I'm really impressed with the quick delivery and the quality of the food. Everything was delicious and well-packaged. Keep up the great work!"</span></p>
+                    </div>
+                </div>
             </div>
         </div>
         </div>
