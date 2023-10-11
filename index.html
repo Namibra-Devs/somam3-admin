@@ -43,6 +43,10 @@
             font-family: var(--font-roboto);
         }
 
+        .primary {
+            color: #087D48;
+        }
+
         .bg-danger-light {
             background-color: var(--danger-light);
         }
@@ -71,6 +75,11 @@
         .text-tertiary {
             color: var(--tertiary);
         }
+
+
+        .nav-item #active{
+            background-color: #087D48;
+        }
         
     </style>
 </head>
@@ -91,7 +100,7 @@
     <ul class="navbar-nav my-2 w-100 justify-content-center">
         <li class="nav-item my-2 fs-6 w-100 justify-content-center">
 
-            <a href="#" class="nav-link px-4 py-2 rounded-3 bg-primary text-light text-decoration-none">
+            <a href="#" class="nav-link px-4 py-2 rounded-3 text-light text-decoration-none" id="active">
                 <img src="./src/imgs/Iconly/Bold/home.svg" style="width: 1rem;" alt="" class="text-light"> <span class="ms-1">Dashboard</span>
                 
             </a>
@@ -148,7 +157,7 @@
 
     </ul>
 
-    <ul class="navbar-nav align-items-baseline">
+    <ul class="navbar-nav align-items-baseline mt-5 pt-2">
         <li class="nav-item my-2 fs-6 w-100 justify-content-center">
 
             <a href="#" class="nav-link px-4 py-2 rounded-3 text-decoration-none text-danger ">
@@ -195,9 +204,9 @@
 
         <div class="container-fluid">
 
-            <div class="row gap-3 w-100">
-                <div class="col-3">
-                    <div class="card rounded-4 border-2 border-danger bg-danger-light" style="width: 12rem; height: 10rem">
+            <div class="row gap-5 py-4 justify-content-center w-100">
+                <div class="col-2">
+                    <div class="card rounded-4 border-2 border-danger bg-danger-light" style="width: 10rem; height: 10rem">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -209,8 +218,8 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-3">
-                    <div class="card rounded-4 border-2 border-warning bg-warning-light" style="width: 12rem; height: 10rem">
+                <div class="col-2">
+                    <div class="card rounded-4 border-2 border-warning bg-warning-light" style="width: 10rem; height: 10rem">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -223,8 +232,8 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-3">
-                    <div class="card rounded-4 border-2 border-info bg-info-light" style="width: 12rem; height: 10rem">
+                <div class="col-2">
+                    <div class="card rounded-4 border-2 border-info bg-info-light" style="width: 10rem; height: 10rem">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -238,8 +247,8 @@
                       </div>
                 </div>
               
-                <div class="col-3">
-                    <div class="card rounded-4 border-2 border-secondary bg-secondary-light" style="width: 12rem; height: 10rem">
+                <div class="col-2">
+                    <div class="card rounded-4 border-2 border-secondary bg-secondary-light" style="width: 10rem; height: 10rem">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -251,8 +260,8 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-3">
-                    <div class="card rounded-4 border-2 border-tertiary bg-tertiary-light" style="width: 12rem; height: 10rem">
+                <div class="col-2">
+                    <div class="card rounded-4 border-2 border-tertiary bg-tertiary-light" style="width: 10rem; height: 10rem">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -264,8 +273,8 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-3">
-                    <div class="card rounded-4 border-2 border-danger bg-danger-light" style="width: 12rem; height: 10rem">
+                <div class="col-2">
+                    <div class="card rounded-4 border-2 border-danger bg-danger-light" style="width: 10rem; height: 10rem">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -277,8 +286,8 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-3">
-                    <div class="card rounded-4 border-2 border-info bg-info-light" style="width: 12rem; height: 10rem">
+                <div class="col-2">
+                    <div class="card rounded-4 border-2 border-info bg-info-light" style="width: 10rem; height: 10rem">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -290,8 +299,8 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-3">
-                    <div class="card rounded-4 border-2 border-tertiary bg-tertiary-light" style="width: 12rem; height: 10rem">
+                <div class="col-2">
+                    <div class="card rounded-4 border-2 border-tertiary bg-tertiary-light" style="width: 10rem; height: 10rem">
                         <div class="card-body">
 
                             <div class="fs-5 bg-body d-inline p-2 rounded-5">
@@ -310,7 +319,7 @@
                 <div class="row">
                     <div class="col-7 p-5 bg-light rounded-4">
                         <div class="header my-3">
-                            <h3 class="fw-bold fs-4 text-primary">Top Store Charts</h3>
+                            <h3 class="fw-bold fs-5 primary">Top Store Charts</h3>
                         </div>
                         <hr>
                         <table class="table px-3 py-2 table-light">
@@ -370,7 +379,7 @@
 
                     <div class="col-4 px-4 py-5 ms-5 bg-light rounded-4">
                         <div class="header my-3">
-                            <h3 class="fw-bold fs-4 w-100  text-primary">Customer's Comments</h3>
+                            <h3 class="fw-bold fs-5 w-100  primary">Customer's Comments</h3>
                     </div>
                     <hr>
                     <div class="comments">
