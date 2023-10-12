@@ -93,6 +93,16 @@
         #delivered {
             color: var(--success);
         }
+
+        .cuisines-list {
+            font-size: .75rem;
+            list-style-type: square;
+                }
+
+                #numbered {
+                    font-size: .75rem;
+                }
+
         
     </style>
 </head>
@@ -226,30 +236,78 @@
 
         <!-- Main Content -->
 
-        <div class="container-fluid">
-            <header class="bg-success-light p-3 justify-content-center primary rounded-2">
-                <h5 class="fw-bold">Total Numbers of Riders: <span id="orders-totals">245</span></h5>
+        <div class="container-fluid w-100">
+            <header class="bg-success-light p-3 rounded-4 justify-content-center w-100">
+                <div class="text-center">
+
+                    <h5 class="fw-bold fs-6 primary">Total Numbers of Orders: <span id="orders-totals">245</span></h5>
+                </div>
+           
+                <div class="d-flex justify-content-around pt-4">
+
+                    <div>
+                        <h5 class="fw-bold fs-6 primary">Popular Items or Cuisines:</h5>
+                        <ul class="cuisines-list">
+                            <li>Top Selling Items: Pizza, Burgers, Sushi.</li>
+                            <li>Popular Services: Food Delivery, Groceries , Errands.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold fs-6 primary">Popular Items or Cuisines:</h5>
+                        <ul class="cuisines-list">
+                            <li>Top Selling Items: Pizza, Burgers, Sushi.</li>
+                            <li>Popular Services: Food Delivery, Groceries , Errands.</li>
+                        </ul>
+                    </div>
+                </div>
             </header>
+            <header class="bg-light mt-4 p-3 rounded-4 justify-content-center w-100">
+                <div class="">
+
+                    <h5 class="fw-bold fs-6 primary">Customer Feedback and Ratings:</h5>
+                </div>
+           
+                    <div>
+                        <ul class="cuisines-list">
+                            <li>Customer Satisfaction: Average rating of 4.7/5.</li>
+                            <li>Popular Services: Food Delivery, Groceries , Errands.</li>
+                        </ul>
+                        <p class="primary fw-bold">- Feedback Summary:</p>
+                        <p>Positive Feedback:</p>
+                        <ol id="numbered">
+                            <li> "The delivery was fast, and the food arrived hot. Excellent service!"<span> - Customer1232 </span></li>
+                            <li> "I love the wide selection of restaurants available. The app is so convenient" <span> - Customer456</span></li>
+                            <li> "The customer support team was very helpful and resolved my issue promptly." <span> - Customer789</span></li>
+                        </ol>
+                    </div>
+                </div>
+            </header>
+
+
+
             <div class=" mt-4 p-5 bg-light rounded-4">
                 <div class="header my-3">
-                    <h3 class="fw-bold fs-5 primary">Riders List</h3>
+                    <h3 class="fw-bold fs-5 primary">Order List</h3>
                 </div>
                 <hr>
                 <table class="table px-3 py-2 table-light">
                     <thead>
                       <tr>
-                        <th scope="col">Riders ID</th>
+                        <th scope="col">Order ID</th>
                         <th scope="col">Customer Name</th>
-                        <th scope="col">Contact Information</th>
-                        <th scope="col">Status</th>
+                        <th scope="col">Stores Name</th>
+                        <th scope="col">Total Amount</th>
+                        <th scope="col">Order Status</th>
+                        <th scope="col">Action</th>
                     </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
                         <td>Agbasi Samuel</td>
-                        <td>Agbasi Samuel@gmail.com</td>
-                        <td>On Duty</td>
+                        <td>The Market Basket</td>
+                        <td>$12.9</td>
+                        <td id="in-progress">In Progress</td>
                         <td>
                             <button class="border-0 bg-light">
 
@@ -263,8 +321,9 @@
                       <tr>
                         <th scope="row">2</th>
                         <td>Agbasi Samuel</td>
-                        <td>Agbasi Samuel@gmail.com</td>
-                        <td>Available</td>
+                        <td>Foodie's Paradise</td>
+                        <td>$9.9</td>
+                        <td id="delivered">Delivered</td>
                         <td>
                             <button class="border-0 bg-light">
 
@@ -278,8 +337,9 @@
                       <tr>
                         <th scope="row">3</th>
                         <td>Agbasi Samuel</td>
-                        <td>Agbasi Samuel@gmail.com</td>
-                        <td>On Duty</td>
+                        <td>Fresh & Flavorful</td>
+                        <td>$79</td>
+                        <td id="pending">Pending</td>
                         <td>
                             <button class="border-0 bg-light">
 
@@ -293,8 +353,9 @@
                       <tr>
                         <th scope="row">4</th>
                         <td>Agbasi Samuel</td>
-                        <td>Agbasi Samuel@gmail.com</td>
-                        <td>Available</td>
+                        <td>Nourish & Co.</td>
+                        <td>$9.0</td>
+                        <td>Delivered</td>
                         <td>
                             <button class="border-0 bg-light">
 
@@ -308,8 +369,9 @@
                       <tr>
                         <th scope="row">5</th>
                         <td>Agbasi Samuel</td>
-                        <td>Agbasi Samuel@gmail.com</td>
-                        <td>On Duty</td>
+                        <td>Savory Delights</td>
+                        <td>$24.2</td>
+                        <td>In Progress</td>
                         <td>
                             <button class="border-0 bg-light">
 
@@ -323,8 +385,9 @@
                       <tr>
                         <th scope="row">6</th>
                         <td>Agbasi Samuel</td>
-                        <td>Agbasi Samuel@gmail.com</td>
-                        <td>Off Duty</td>
+                        <td>Taste Haven</td>
+                        <td>$44.5</td>
+                        <td>Pending</td>
                         <td>
                             <button class="border-0 bg-light">
 
@@ -338,8 +401,9 @@
                       <tr>
                         <th scope="row">7</th>
                         <td>Agbasi Samuel</td>
-                        <td>Agbasi Samuel@gmail.com</td>
-                        <td>Available</td>
+                        <td>Savory Delights</td>
+                        <td>$9.9</td>
+                        <td>In Progress</td>
                         <td>
                             <button class="border-0 bg-light">
 
@@ -353,8 +417,9 @@
                       <tr>
                         <th scope="row">8</th>
                         <td>Agbasi Samuel</td>
-                        <td>Agbasi Samuel@gmail.com</td>
-                        <td>Off Duty</td>
+                        <td>The Market Basket</td>
+                        <td>$19.9</td>
+                        <td>Delivered</td>
                         <td>
                             <button class="border-0 bg-light">
 
