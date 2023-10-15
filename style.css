@@ -1,0 +1,97 @@
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    --danger-light: hsla(0, 96%, 90%, 0.3);
+    --success-light: hsla(126, 96%, 90%, 0.3);
+    --warning-light: hsla(45, 96%, 90%, 0.3);
+    --info-light: hsla(266, 96%, 90%, 0.3);
+    --secondary-light: hsla(222, 96%, 90%, 0.3);
+    --tertiary: hsl(126, 93%, 44%);
+    --tertiary-light: hsla(126, 96%, 90%, 0.3);
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.font-roboto {
+    font-family: var(--font-roboto);
+}
+
+.primary {
+    color: #087D48;
+}
+
+.bg-danger-light {
+    background-color: var(--danger-light);
+}
+
+.bg-success-light {
+    background-color: var(--success-light);
+}
+
+.bg-info-light {
+    background-color: var(--info-light);
+}
+
+.bg-secondary-light {
+    background-color: var(--secondary-light);
+}
+
+.bg-warning-light {
+    background-color: var(--warning-light);
+}
+
+.bg-tertiary-light {
+    background-color: var(--tertiary-light);
+    border-color: var(--tertiary);
+}
+
+.text-tertiary {
+    color: var(--tertiary);
+}
+
+
+#active-link {
+    background-color: #087D48;
+}
+
+.fs-small {
+    font-size: .9rem;
+}
+
+.fs-smaller {
+    font-size: .8rem;
+}
+
+
+#pending {
+    color: #9747FF;
+}
+
+#in-progress {
+    color: #F7BA07;
+}
+
+#delivered {
+    color: var(--success);
+}
+
+.cuisines-list {
+    font-size: .75rem;
+    list-style-type: square;
+}
+
+#numbered {
+    font-size: .75rem;
+}
+
+.rounded-full {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.edit-btn {
+    float: right;
+    margin-top: -2rem;
+}
