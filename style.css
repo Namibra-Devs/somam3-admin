@@ -75,10 +75,9 @@ body {
 }
 
 
-.active {
+/* .active {
     background-color: #087D48 !important;
-    /* color: whitesmoke !important; */
-}
+} */
 
 
 .fs-small {
@@ -121,3 +120,19 @@ body {
     float: right;
     margin-top: -2rem;
 }
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: .9rem;
+    background-color: rgb(125, 123, 123);
+    color: rgb(202, 202, 202);
+  }
+
+  .footer p {
+    text-align: center;
+    margin-top: 1rem;
+  }
